@@ -1,0 +1,28 @@
+{
+    "name": "styled-components-objects-to-tempate-literals-codemod",
+    "version": "1.0.0",
+    "description": "Transforms styled-components style objects to tagged template literals",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/valcol/styled-components-objects-to-tempate-literals-codemod.git"
+    },
+    "author": "valcol",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/valcol/styled-components-objects-to-tempate-literals-codemod/issues"
+    },
+    "homepage": "https://github.com/valcol/styled-components-objects-to-tempate-literals-codemod#readme",
+    "dependencies": {
+        "chalk": "^4.1.1"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.14.1",
+        "babel-jest": "^26.6.3",
+        "jest": "^26.6.3",
+        "jscodeshift": "^0.12.0"
+    }
+}
