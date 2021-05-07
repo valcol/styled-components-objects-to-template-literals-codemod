@@ -18,3 +18,8 @@ margin-bottom: 5px;
 color: blue;
 font-size: ${({ fontSize }) => fontSize};
 `;
+
+export default styled.div`
+color: blue;
+font-size: ${props => props.fontSize};
+`;

@@ -22,3 +22,8 @@ export const MyCustomComponentAgain = styled.div(
         fontSize,
     })
 );
+
+export default styled.div((props) => ({
+    color: "blue",
+    fontSize: props.fontSize,
+}));

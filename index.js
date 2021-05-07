@@ -284,7 +284,10 @@ const styledObjectToTemplate = (fileInfo, api, { safe }) => {
 
     const nodePathToTaggedTemplate = (nodePath) => {
         try {
-            const identifier = nodePath.parent.node.id.name;
+            const identifier =
+                nodePath?.parent?.node?.id?.name ||
+                nodePath?.parent?.node?.type;
+
             log(
                 `\nTrying to convert ${chalk.bold(
                     identifier
