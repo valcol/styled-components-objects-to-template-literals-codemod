@@ -5,20 +5,25 @@ Transforms styled-components style objects to tagged template literals
 # How to install
 
 ```bash
-npm install -g jscodeshift
-npm install https://github.com/valcol/styled-components-objects-to-template-literals-codemod
+npm install -g https://github.com/valcol/styled-components-objects-to-template-literals-codemod
+```
+
+or
+
+```bash
+yarn global add https://github.com/valcol/styled-components-objects-to-template-literals-codemod
 ```
 
 # How to use
 
 ```bash
-jscodeshift -t node_modules/styled-components-objects-to-template-literals-codemod <path>
+styled-components-objects-to-template-literals-codemod <path>
 ```
 
 You can pass the `--safe` option to transform only components who don't log warnings :
 
 ```bash
-jscodeshift --safe -t node_modules/styled-components-objects-to-template-literals-codemod <path>
+styled-components-objects-to-template-literals-codemod <path> --safe
 ```
 
 **Will modify files in place, so make sure you can recover if it goes wrong!**
@@ -26,7 +31,7 @@ jscodeshift --safe -t node_modules/styled-components-objects-to-template-literal
 You can pass the `-p -d` options if you only want to have a preview of the file without overwritting it :
 
 ```bash
-jscodeshift --safe -p -d -t node_modules/styled-components-objects-to-template-literals-codemod <path>
+styled-components-objects-to-template-literals-codemod <path> --safe -p -d
 ```
 
 See https://github.com/facebook/jscodeshift/ for more options
