@@ -1,4 +1,3 @@
-//jscodeshift -t codemod.js styles.js -d -p
 import chalk from "chalk";
 
 const camelCaseToDash = (str = "") => {
